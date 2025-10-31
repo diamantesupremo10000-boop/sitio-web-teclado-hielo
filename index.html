@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teclado de Hielo — Demo</title>
+  <meta name="description" content="Teclado de Hielo — interfaz estática, animaciones 3D, partículas y micro-interacciones." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="stage" aria-labelledby="title">
+    <h1 id="title" class="sr-only">Teclado de Hielo — Demo</h1>
+
+    <!-- Canvas de partículas -->
+    <canvas id="snowCanvas" aria-hidden="true"></canvas>
+
+    <section class="wrap">
+      <header class="hero">
+        <div class="hero-left">
+          <h2 class="brand">Teclado <span class="ice">de Hielo</span></h2>
+          <p class="tagline">3D · Neon · Partículas · Micro-interacciones</p>
+          <div class="controls">
+            <button id="randomizeBtn" class="btn">Randomizar luz</button>
+            <label class="toggle">
+              <input type="checkbox" id="motionToggle" checked>
+              <span>Animación</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <!-- Representación estilizada de un teclado 3D -->
+          <div class="keyboard" id="keyboard" role="list" aria-label="Teclas demostración">
+            <!-- filas y teclas generadas en HTML para accesibilidad -->
+            <div class="row" role="group" aria-label="Fila 1">
+              <button class="key" role="listitem" tabindex="0">Q</button>
+              <button class="key" role="listitem" tabindex="0">W</button>
+              <button class="key" role="listitem" tabindex="0">E</button>
+              <button class="key" role="listitem" tabindex="0">R</button>
+              <button class="key" role="listitem" tabindex="0">T</button>
+            </div>
+            <div class="row" role="group" aria-label="Fila 2">
+              <button class="key" role="listitem" tabindex="0">A</button>
+              <button class="key" role="listitem" tabindex="0">S</button>
+              <button class="key" role="listitem" tabindex="0">D</button>
+              <button class="key" role="listitem" tabindex="0">F</button>
+              <button class="key" role="listitem" tabindex="0">G</button>
+            </div>
+            <div class="row" role="group" aria-label="Fila 3">
+              <button class="key" role="listitem" tabindex="0">Z</button>
+              <button class="key" role="listitem" tabindex="0">X</button>
+              <button class="key" role="listitem" tabindex="0">C</button>
+              <button class="key" role="listitem" tabindex="0">V</button>
+              <button class="key" role="listitem" tabindex="0">B</button>
+            </div>
+            <div class="row" role="group" aria-label="Espacio y acción">
+              <button class="key wide" role="listitem" tabindex="0">SPACE</button>
+              <button class="key action" role="listitem" tabindex="0">ENTER</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="info">
+        <p>Interactúa con las teclas — haz hover, tab o touch. Ideal para grabar pantalla y usar en reels/shorts.</p>
+      </section>
+    </section>
+
+    <footer class="credits" aria-hidden="true">
+      <small>Plantilla: “Teclado de Hielo” • HTML · CSS · JS — 2025</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
